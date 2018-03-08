@@ -15,3 +15,10 @@ const put = (url = '', data = '', config = {}) => {
 const del = (url = '', data = '', config = {}) => {
     return axios.delete(url, config)
 }
+
+const HttpClient = {
+    post,
+    get,
+    put,
+    delete: del
+}
